@@ -77,7 +77,7 @@ void CArgosRosBot::ControlStep() {
   state.dot_z = 0;
 
   statePub.publish(state);
-  // cout << "Lening Li is awesome!!!!!"<<endl;
+ 
 
   // Wait for any callbacks to be called.
   ros::getGlobalCallbackQueue()->callAvailable(ros::WallDuration(0.1));
